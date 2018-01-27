@@ -23,6 +23,7 @@
                 android:text="Team A" />
 
             <TextView
+                android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -31,16 +32,19 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="incrementA3"
                 android:text="+3 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="incrementA2"
                 android:text="+2 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="incrementA1"
                 android:text="Free Throw" />
         </LinearLayout>
 
@@ -62,24 +66,29 @@
                 android:text="Team A" />
 
             <TextView
+                android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:gravity="center"
                 android:text="0" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="incrementB3"
                 android:text="+3 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="incrementB2"
                 android:text="+2 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="incrementB1"
                 android:text="Free Throw" />
         </LinearLayout>
     </LinearLayout>
@@ -89,5 +98,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:onClick="resetScores"
         android:text="Reset" />
 </RelativeLayout>
